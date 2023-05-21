@@ -40,6 +40,7 @@ class WebWebViewControllerCreationParams
   @visibleForTesting
   final html.IFrameElement iFrame = html.IFrameElement()
     ..id = 'webView${_nextIFrameId++}'
+    ..allowFullscreen = true
     ..style.width = '100%'
     ..style.height = '100%'
     ..style.border = 'none';
